@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/fluentui-dark.css">
+        <style>
+            .grid-container-3-auto {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                gap: 20px;
+                align-items: stretch;
+            }
+            .grid-container-3-fijo {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 20px; 
+                align-items: stretch;
+            }
+            .profile-pic {
+                width: 100%;
+                max-width: 250px;
+                min-width: 150px;
+                height: auto;
+                max-height: 250px;
+                min-height: 100px;
+                object-fit: cover;
+                border-radius: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        {% include web-encabezado.html %}
+        <main>
+            <div class="grid-container-3-auto">
+                <div style="grid-row: span 2; place-items: center;">
+                    <img src="/perfil.jpg" alt="Foto de perfil" class="profile-pic">
+                    <p>{{ page.presentacion }}</p>
+                </div>
+                <div style="grid-column: span 2;">
+                    <h1>{{ page.nombre }}</h1>
+                    <p>{{ page.descripcion }}</p>
+                </div>
+                <div>
+                    <h2>Educación</h2>
+                    <p>Título Actual: {{ page.tituloactual }}</p>
+                    <p>Próximo Título: {{ page.tituloproximo }}</p>
+                </div>
+                <div>
+                    <h2>Contacto</h2>
+                    <p>{{ page.celular }}</p>
+                    <p>{{ page.correoe }}</p>
+                </div>
+            </div>
+            <div class="grid-container-3-fijo">
+                <div style="grid-column: span 3; place-items: center;">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="card">
+                    {{ page.card1 | markdownify }}
+                </div>
+                <div class="card">
+                    {{ page.card2 | markdownify }}
+                </div>
+                <div class="card">
+                    {{ page.card3 | markdownify }}
+                </div>
+            </div>
+        </main>
+        {% include web-pie.html %}
+    </body>
+</html>
