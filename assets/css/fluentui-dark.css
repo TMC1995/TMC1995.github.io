@@ -84,15 +84,33 @@ button:hover, .btn:hover {
     transform: scale(1.03);
 }
 
-/* ---- Tarjetas ---- */
+/* ---- Tarjetas ---- margin: 20px 0;*/
 .card {
-    background-color: #FFFFFF;
-    padding: 16px;
+    background-color: #252526;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
+    transition: transform 0.3s ease;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
 /* ---- Enlaces en Modo Oscuro ---- */
 a {
     color: #88b0ff;
