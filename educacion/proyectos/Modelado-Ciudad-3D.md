@@ -1,5 +1,5 @@
 ---
-layout: publicaciones
+layout: post
 title: Modelado de una Ciudad en 3D
 descripcion: Explicación del proceso para diseñar en secundaria una ciudad en 3D.
 categoria: Educación
@@ -25,5 +25,3 @@ Tanto el hardware como el software se han considerado al mínimo requerido y que
 - Gráfica: Compatible con OpenGL 2.0.
 ### Otros
 - Medio para pasar archivos entre equipos (usb, Lan)
-
-## 3. 
