@@ -24,4 +24,4 @@ Tanto el hardware como el software se han considerado al mínimo requerido y que
 - Almacenamiento: 2 GB.
 - Gráfica: Compatible con OpenGL 2.0.
 ### Otros
-- Medio para pasar archivos entre equipos (usb, Lan)
+- Medio para pasar archivos entre equipos (usb, Lan).
