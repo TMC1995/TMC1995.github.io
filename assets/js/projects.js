@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const response = await fetch(`${categoria}/proyectos/${postFile}`);
       if (!response.ok) {
-          document.getElementById('project-title').innerText = 'Error al cargar el proyecto.';
           throw new Error(`No se pudo cargar el archivo ${postFile}`);
       }
       const text = await response.text();
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       document.getElementById('project-content').innerHTML = htmlContent;
     } catch (error) {
       console.error(error);
-      document.getElementById('project-title').innerText = 'Error: ${error}';
+      document.getElementById('project-title').innerText = 'Error: ' + error;
     }
   });
   
