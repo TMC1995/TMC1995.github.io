@@ -1,0 +1,9 @@
+title: "Mi Portafolio"
+description: "Un portafolio con HTML + publicaciones en Markdown"
+baseurl: "" # déjalo vacío para GitHub Pages
+url: "https://tmc1995.github.io"
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
