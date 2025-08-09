@@ -1,18 +1,18 @@
-# Archivos y carpetas generadas por Jekyll
+# --- Archivos y carpetas generadas por Jekyll ---
 _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
 .bundle/
 
-# Archivos relacionados con Ruby (si no trabajas con ellos directamente)
+# --- Archivos locales de Ruby (no se usan en producción) ---
 Gemfile
 Gemfile.lock
 
-# Archivos de configuración de IDEs
+# --- Configuración de IDEs ---
 .idea/
 *.iml
 
-# Archivos temporales del sistema operativo
+# --- Archivos temporales del sistema operativo ---
 .DS_Store
 Thumbs.db
